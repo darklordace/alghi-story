@@ -1,0 +1,202 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.25;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.8) 100%);
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.descbox-right {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    margin-left: 60%;
+    position: relative;
+    top: 40vh;
+    font-size: 1.1em;
+}
+
+.descbox-left {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    margin-left: 12%;
+    position: relative;
+    top: 55vh;
+    font-size: 1.1em;
+}
+
+.descbox-top {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    margin-left: 15%;
+    position: relative;
+    top: 15vh;
+    font-size: 1.1em;
+}
+
+.desc-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#slide-welcome {
+    background-image: url(img/Alghi_Netherland.jpg);
+}
+
+#slide-childhood {
+    background-image: url(img/Alghi_Childhood.jpg)
+}
+
+#slide-school {
+    background-image: url(img/Alghi_SMA.jpg)
+}
+
+#slide-osn {
+    background-image: url(img/Alghi_OSN.jpg)
+}
+
+#slide-university {
+    background-image: url(img/Alghi_Smada_UI.jpg)
+}
+
+#slide-gdp {
+    background-image: url(img/Alghi_GDP.jpg)
+}
+
+.btn-next {
+    color: black;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 60%;
+    top: 86vh;
+    position: relative;
+}
+
+.btn-next:hover {
+    color: initial;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.first-title {
+    font-size: 2.15rem;
+    margin-left: 61%;
+    top: 40vh;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .descbox {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+#contact {
+    height: 100%;
+    width: 100%;
+    background-image: url(img/Chess.jpg);
+    padding-top: 8%;
+    
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-title {
+    padding-top: 4.5rem;
+}
+
+.card-wrapper {
+    width: 60%;
+    height: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-separator {
+    text-align: center;
+    width: 4px;
+    height: 100%;
+    background-color: #444444;
+}
+
+.social {
+    font-size: 2rem;
+}
+
+.social {
+    padding-left: 10%;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 7%;
+    padding: 0;
+}
+
+.social a {
+    color: #404040;
+}
+
+.social a:hover {
+    color: #000000;
+}
+
+.dashboard-social {
+    margin-left: 60%;
+    position: relative;
+    top: 42vh;
+    font-size: 2rem;
+    padding-right: 18px;
+    padding-left: 18px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dashboard-social li {
+    display: inline-block;
+    margin: 0 24px;
+    padding: 0;
+}
+
+.dashboard-social a {
+    color: #404040;
+}
+
+.dashboard-social a:hover {
+    color: #000000;
+}
