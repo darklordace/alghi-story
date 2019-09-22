@@ -8,11 +8,12 @@ html, body {
 }
 
 .navbar {
+    font-weight: bold;
     position: fixed;
     width: 100%;
     z-index: 100;
     background: rgba(255, 255, 255, 0.8);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.8) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.25) 30%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.8) 100%);
 }
 
 .slide {
@@ -209,7 +210,11 @@ html, body {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
+    .navbar .nav-item .disabled {
+        display: none;
+    }
+
     #contact {
         padding-top: 4%;
     }
@@ -236,6 +241,9 @@ html, body {
     .coltwo {
         display: none;
     }
+}
+
+@media screen and (max-width: 1000px) {
 
     .descbox-left {
         margin-left: 10%;
