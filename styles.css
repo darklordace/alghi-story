@@ -44,7 +44,7 @@ html, body {
     width: 30%;
     margin-left: 12%;
     position: relative;
-    top: 55vh;
+    top: 45vh;
     font-size: 1.1em;
 }
 
@@ -113,13 +113,6 @@ html, body {
     position: relative;
 }
 
-@media screen and (max-width: 600px) {
-    .descbox {
-        width: 60%;
-        margin-left: 20%;
-    }
-}
-
 #contact {
     height: 100%;
     width: 100%;
@@ -137,11 +130,15 @@ html, body {
 
 .contact-title {
     padding-top: 4.5rem;
+    font-size: 2.25em;
+}
+
+.contact-email {
+    font-size: 1.1em;
 }
 
 .card-wrapper {
     width: 60%;
-    height: 84%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -155,10 +152,7 @@ html, body {
 }
 
 .social {
-    font-size: 2rem;
-}
-
-.social {
+    font-size: 2em;
     padding-left: 10%;
 }
 
@@ -180,7 +174,7 @@ html, body {
     margin-left: 60%;
     position: relative;
     top: 42vh;
-    font-size: 2rem;
+    font-size: 2em;
     padding-right: 18px;
     padding-left: 18px;
     display: inline-block;
@@ -199,4 +193,84 @@ html, body {
 
 .dashboard-social a:hover {
     color: #000000;
+}
+
+.secret-social {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-wrapper {
+        font-size: 85%;
+    }
+
+    .colone {
+        padding-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact {
+        padding-top: 4%;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .secret-social {
+        display: block;
+        padding-top: 1rem;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .contact-title {
+        padding-top: 1rem;
+    }
+    
+    .card-wrapper {
+        width: 90%;
+    }
+
+    .coltwo {
+        display: none;
+    }
+
+    .descbox-left {
+        margin-left: 10%;
+        width: 45%;
+    }
+
+    .first-title, .dashboard-social, .descbox-right {
+        width: 40%;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .secret-social li {
+        margin: 0 6%;
+    }
+
+    .descbox-left {
+        margin-left: 10%;
+        width: 60%;
+    }
+
+    .first-title, .dashboard-social, .descbox-right, .descbox-top {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .secret-social li {
+        margin: 0 4%;
+    }
+
+    .first-title, .dashboard-social, .descbox-right, .descbox-left, .descbox-top {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
