@@ -88,6 +88,22 @@ html, body {
     background-image: url(img/Alghi_GDP.jpg)
 }
 
+.bg-gdp {
+    position: fixed;
+    background-image: url(img/Alghi_GDP.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .btn-next {
     color: black;
     text-decoration: none;
@@ -114,11 +130,13 @@ html, body {
     position: relative;
 }
 
-#contact {
-    height: 100%;
-    width: 100%;
+.bg-contact {
+    position: fixed;
     background-image: url(img/Chess.jpg);
-    padding-top: 8%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
     
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -127,6 +145,11 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#contact {
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .contact-title {
@@ -198,6 +221,37 @@ html, body {
 
 .secret-social {
     display: none;
+}
+
+.quote-bg {
+    position: fixed;
+    background-image: url(img/Chess.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#quote {
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+}
+
+.rq-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 @media screen and (max-width: 1200px) {
